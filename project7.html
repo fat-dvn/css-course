@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: inherit;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 1000px;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav p{
+            color: #E91E63;
+            font-size: 18px;
+            font-weight: 200;
+        }
+        .nav ul{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+        .nav a{
+            text-decoration: none;
+            margin-left: 46px;
+        }
+        
+       .btn-nav{
+           background-color: #E91E63;
+           color: white;
+           padding: 0.5rem;
+           border-radius: 4px;
+           font-size: 14px;
+           border: none;
+           width: 95px;
+           height: 26px;
+           margin-left: 30px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .header{
+        display: flex;
+        margin-top: 100px;
+       }
+       .header-content-left{
+        width: 500px;
+       }
+       .header h1{
+        line-height: 46px;
+       }
+       .span1{
+        font-weight: normal;
+       }
+       .span3{
+        color: #E91E63;
+       }
+       .header-content-left p{
+        line-height: 22px;
+        font-size: 14px;
+        color: #444343;
+        margin: 16px 0;
+       }
+       .header-content-left input{
+        border: none;
+        outline: none;
+        width: 250px;
+        height: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+        padding-left: 16px;
+       }
+       .btn-left{
+        border: none;
+        outline: none;
+        background-color: #E91E63;
+        color: white;
+        padding: 5px 10px;
+        height: 30px;
+        box-shadow:  0 2px 8px rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+       }
+       .header-content-right{
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+       }
+       .img-content1{
+        width: 200px;
+        height: 200px;
+        border-radius: 4px;
+        transform: translateY(+70px);
+       }
+       .img-content2{
+        width: 200px;
+        height: 200px;
+        border-radius: 4px;
+       }
+       .div-content-right{
+        z-index: 1;
+        background: linear-gradient( rgba(220,0,60,0.7),rgba(180,20,50,0.3));
+        color: white;
+         min-width: 300px;
+        min-height: 60px;
+        border-radius: 6px;
+        padding: 12px 12px 12px 30px;
+        transform: translateY(-80px);
+        backdrop-filter: blur(10px);
+        list-style: disc;
+        font-size: 14px;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <p>Learning</p>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Blog</a></li>
+                <button class="btn-nav">Register</button>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header-content-left">
+                <h1>
+                    <span class="span1">Best Learning</span><br>
+                    <span class="span2">Education platform</span><br>
+                    <span class="span3">in the world</span>
+                </h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi<br>doloribus hic ad cum vone quae Lorem ipsum Lorem, ipsum. dolor sit <br> amet, consectetur adipisicing elit. Cumque quibusdam harum delectus.</p>
+                <input type="text" placeholder="what do you want to learn">
+                <button class="btn-left">Search courses</button>
+            </div>
+            <div class="header-content-right">
+                <img class="img-content1" src="/images/header-1.jpg" alt="">
+                <img class="img-content2" src="/images/header-2.jpg" alt="">
+                <ul class="div-content-right">
+                    <li>get 30% off on every 1st month</li><br>
+                    <li>expert teacher</li>
+                </ul>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #CFD8DC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        .circle{
+            z-index: -1;
+            width: 1000px;
+            height: 1000px;
+            position: fixed;
+            border-radius: 100%;
+            background-color: #4DB6AC;
+            transform: translateY(-38%);
+            left: -9rem;
+            top: 78%;
+        }
+        .img-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            background-color: #fff;
+            height: 100%;
+        }
+        .img-form img{
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .form-login{
+            border: 5px solid white;
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            backdrop-filter: blur(18px);
+        }
+        .form-login form{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-login h1{
+            color: white;
+            margin-bottom: 3rem;
+        }
+        .login-input{
+           width: 50%;
+           display: flex;
+           flex-direction: column;
+           margin-bottom: 16px;
+        }
+       .login-input label{
+        font-weight: 300;
+        color: white;
+        margin-bottom: 10px;
+        display: block;
+       }
+       .login-input input{
+        border: 2px solid white;
+        outline: none;
+        background-color: transparent;
+        border-radius: 20px;
+        height: 40px;
+       }
+    
+       .btn{
+        width: 50%;
+        border: none;
+        background-color: #fff;
+        border-radius: 20px;
+        height: 40px;
+        margin-top: 10px;
+        font-weight: 200;
+        margin-bottom: 30px;
+       }
+       .link a{
+        text-decoration: none;
+        color: #fff;
+       }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="form-login">
+        <form action="">
+            <h1>Welcome</h1>
+            <div class="login-input">
+                <label for="name">username</label>
+                <input type="text" id="name">
+            </div> 
+            <div class="login-input">
+                <label for="pass">password</label>
+                <input type="password" id="pass">
+            </div>
+            <button class="btn">Login</button>
+            <div class="link">
+                <a href="">creat your new account</a>
+            </div>
+        </form>
+        <div class="img-form">
+            <img src="/images/login.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

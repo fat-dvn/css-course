@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            gap: 38px;
+       }
+        .card{
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+        }
+        .card::after ,.card::before{
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            transition: all 250ms ease-in;
+           
+        }
+        .card::after{
+            top: -2px;
+            left: -2px;
+            border-top-left-radius: 20px;
+            border-top: 3px solid;
+            border-left: 3px solid;
+        }
+        .card::before{
+            bottom: -2px;
+            right: -2px;
+            border-bottom-right-radius: 20px;
+            border-bottom: 3px solid;
+            border-right: 3px solid;
+        }
+       
+        .card-section:hover .card::after{
+            width: 80%;
+            height: 80%;
+        }
+        .card-section:hover .card::before{
+            width: 80%;
+            height: 80%;
+        }
+        .card1::after, .card1::before{
+            color: #1976D2;
+        }
+        .card2::after, .card2::before{
+            color: #F4511E;
+        }
+        .card3::after, .card3::before{
+            color: #8E24AA;
+        }
+        .card4::after, .card4::before{
+            color: #D81B60;
+        }
+        .svg{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 2rem;
+        }
+        .svg1{
+            color: #1976D2;
+        }
+        .svg2{
+            color: #F4511E;
+        }
+        .svg3{
+            color: #8E24AA;
+        }
+        .svg4{
+            color: #D81B60;
+        }
+        h3{
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        p{
+            color: rgb(87, 86, 86);
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-section">
+            <div class="card card1">
+                <svg class="svg svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                  </svg>
+                <h3>card title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur for reasen Lorem, ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card card2">
+                <svg class="svg svg2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                   </svg>
+                <h3>card title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur for reasen Lorem, ipsum dolor..</p>  
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card card3">
+               <svg class="svg svg3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                <h3>card title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur for reasen Lorem, ipsum dolor..</p>    
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card card4">
+                <svg class="svg svg4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+                  </svg>
+                <h3>card title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur for reasen Lorem, ipsum dolor..</p>     
+            </div>
+        </div>
+    </div>
+</body>
+</html>

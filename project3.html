@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *,
+        *::after,
+        *::before{
+            margin: 0;
+            font-family: inherit;
+            box-sizing: inherit;
+        }
+        body{
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .btn{
+            width: 140px;
+            height: 40px;
+            background-color:#9C27B0 ;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .icon{
+            width: 22px;
+            height: 22px;
+            transition: all 180ms ease-in;
+        }
+        .menue{
+            width: 140px;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 6px;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 180ms ease-in;
+        }
+        .menue a{
+            text-decoration: none;
+            margin-bottom: 8px;
+            color: #9C27B0;
+        }
+        .menue a:last-child{
+            margin-bottom: 0;
+        }
+        .container:hover .menue{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(12px);
+        }
+        .container:hover .btn svg{
+            transform: rotate(180deg);
+        }
+        .container:hover .btn{
+            background-color: #6A1B9A;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btnbox">
+            <button class="btn">
+                User profile
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+            </button>
+        </div>
+        <div class="menue">
+            <a href="">Bascet</a>
+            <a href="">Courses</a>
+            <a href="">Account</a>
+            <a href="">Logout</a>
+
+        </div>
+
+    </div>
+</body>
+</html>

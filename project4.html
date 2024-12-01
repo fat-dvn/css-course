@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *,
+        *::after,
+        *::before{
+            margin: 0;
+            box-sizing: inherit;
+            font-family: inherit;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .container{
+            max-width: 80rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        .header{
+            margin-top: 50px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+        }
+        .wraper-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .ul{
+            list-style-type: none;
+            display: flex;
+        }
+        .item-header{
+            text-decoration: none;
+            padding: 0 1rem;
+            color: black;
+            font-weight: 300;
+        }
+        .btn{
+            width: 150px;
+            height: 30px;
+            font-size: 17px;
+            border: none;
+            background-color: #9C27B0;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .main1-left{
+            margin-top: 80px;
+        }
+        .main1-right{
+            margin-top: 80px;
+        }
+
+        .main1-title{
+            margin-bottom: 28px;
+        }
+        .main1-text{
+            line-height: 18px;
+            color: #444343;
+            font-size: 14px;
+        }
+        .main1-btns{
+            margin-top: 30px;
+        }
+        .btn2{
+            margin-right: 20px;
+        }
+        .main1-img{
+            height: 300px;
+        }
+        .main1-container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .section1{
+            text-align: center;
+            margin-top: 80px;
+        }
+        .section1-wraper{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .sectin1-text1{
+            margin-bottom: 10px;
+            color: #9C27B0;
+            font-weight: normal;
+        }
+        .section1-text2{
+            font-weight: normal;
+        }
+        .section1-text3{
+            color: #9C27B0;
+            margin-bottom: 12px;
+            font-weight: normal;
+        }
+        .section1-img{
+            width: 600px;
+            margin-top: 28px;
+        }
+        .section2{
+            background-color: #9C27B0;
+            margin-top: 50px;
+            color: white;
+            text-align: center;
+        }
+        .section2-text1{
+            padding-top: 20px;
+        }
+        .section2-text2{
+            padding-top: 8px;
+        }
+        .section-wraper{
+            display: flex;
+           
+        }
+        .coments{
+            margin-top: 50px;
+            font-family: serif;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+          
+            
+       
+        }
+        .coment{
+            width: 270px;
+            background-color: white;
+            color: #444343;
+            line-height: 18px;
+            padding-top: 14px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+
+        }
+        .coment-info{
+            display: flex;
+            align-items: center;
+            border-top: 1px solid rgb(77, 77, 77);
+            margin-top: 28px;
+            padding-bottom: 8px;
+        }
+        .img-coment{
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+        .logos{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .logo{
+            margin-bottom: 50px;
+        }
+        .section3{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+
+        }
+        .section3-text1{
+            color: #9C27B0;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        .section3-text2{
+            font-weight: normal;
+            margin-bottom: 50px;
+        }
+        .section3-imges{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+        }
+        .images3{
+            width: 20rem;
+        }
+        .section4{
+            background-color: #9C27B0;
+        }
+        .section4-wraper{
+            height: 200px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn-input{
+            width: 300px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 6px;
+        }
+        .input{
+            border: none;
+            outline: none;
+            margin-left: 18px;
+        }
+        .btn4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 30px;
+            border: none;
+            outline: none;
+            background-color: #9C27B0;
+            border-radius: 6px;
+            margin-right: 18px;
+        }
+        .section5-wraper{
+            height: 100px;
+            color: #6a6a6a;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wraper-header">
+                <nav class="nav">
+                    <div class="div-header-img">
+                        <img class="img-header" src="/images/Interactive-ART.png" alt="">
+                    </div>
+                    <ul class="ul">
+                        <li><a class="item-header" href="">About</a></li>
+                        <li><a class="item-header" href="">How it works</a></li>
+                        <li><a class="item-header" href="">Client</a></li>
+                        <li><a class="item-header" href="">Portfolio</a></li>
+                    </ul>
+                </nav>
+                <div class="div-btn-header">
+                    <button class="btn">contact us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main1">
+        <div class="container">
+            <div class="main1-container">
+                <div class="main1-left">
+                    <h1 class="main1-title">creat a new generation <br> website for your busines</h1>
+                    <p class="main1-text">there are many Lorem ipsum, dolo consectetur<br> adipisicing elit. Tempor . Inventore est possimus<br>consectetur ab, voluptates repellendus eius dicta ipsai.</p>
+                    <div class="main1-btns">
+                        <button class="btn btn2">concat us</button>
+                        <button class="btn btn3">see our works</button>
+                    </div>
+                </div>
+                <div class="main1-right"><img class="main1-img" src="/images/undraw_learning_sketching_nd4f.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="section1">
+            <div class="container">
+                <h3 class="sectin1-text1">How it works</h3>
+                <h2 class="section1-text2">Three simple step to started worcing process</h2>
+                <div class="section1-wraper">
+                    <div class="section1-divs">
+                        <h4 class="section1-text3">reserch project</h4>
+                        <p class="main1-text">Lorem, ipsum dolor Lorem . sit amet consectetur<br>adipis vel et quisquam laborum deserunt</p>
+                    </div>
+                    <div class="section1-divs">
+                        <h4 class="section1-text3">reserch project</h4>
+                        <p class="main1-text">Lorem, ipsum dolor Lorem . sit amet consectetur<br>adipis vel et quisquam laborum deserunt</p>
+                    </div>
+                    <div class="section1-divs">
+                        <h4 class="section1-text3">reserch project</h4>
+                        <p class="main1-text">Lorem, ipsum dolor Lorem . sit amet consectetur<br>adipis vel et quisquam laborum deserunt</p>
+                    </div>
+                </div>
+                <img class="section1-img" src="/images/undraw_undraw_chatting_lt27_d787.svg" alt="">
+            </div>
+        </section>
+        <section class="section2">
+            <div class="container">
+                <h3 class="section2-text1">you are in a good hand</h3>
+                <p class="section2-text2">there are many variations of Lorem, ipsum dolor.lorem<br>avaliable but the majority have suffered</p>
+                <div class="section2-wraper">
+                    <div class="coments">
+                        <div class="coment">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quae, eaque quis unde impedit ma Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolorem</p>
+                            <div class="coment-info"> <img class="img-coment" src="/images/person-1.png"><h4 class="coment-name">martin jones craetive cons</h4></div>
+                        </div>
+                        <div class="coment">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quae, eaque quis unde impedit ma Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolorem</p>
+                            <div class="coment-info"> <img class="img-coment" src="/images/person-2.png"><h4 class="coment-name">martin jones craetive cons</h4></div>
+                        </div>
+                        <div class="coment">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quae, eaque quis unde impedit ma Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolorem</p>
+                            <div class="coment-info"> <img class="img-coment" src="/images/person-3.png"><h4 class="coment-name">martin jones craetive cons</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logos">
+                    <img class="logo" src="/images/logo-1.svg" alt="">
+                    <img class="logo" src="/images/logo-2.svg" alt="">
+                    <img class="logo" src="/images/logo-3.svg" alt="">
+                    <img class="logo" src="/images/logo-4.svg" alt="">
+                    <img class="logo" src="/images/logo-5.svg" alt="">
+                    <img class="logo" src="/images/logo-6.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="container">
+                <h3 class="section3-text1">portfolio</h3>
+                <h2 class="section3-text2">Three simple step to started worcing process</h2>
+                <div class="section3-imges">
+                    <img class="images3" src="/images/portfolio-1.jpg" alt="">
+                    <img class="images3" src="/images/portfolio-2.jpg" alt="">
+                    <img class="images3" src="/images/portfolio-3.jpg" alt="">
+                    <img class="images3" src="/images/portfolio-4.jpg" alt="">
+                    <img class="images3" src="/images/portfolio-5.jpg" alt="">
+                    <img class="images3" src="/images/portfolio-6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="container">
+                <div class="section4-wraper">
+                    <h3 class="section4-text1">Three simple step to started worcing process</h3>
+                    <div class="btn-input">
+                        <input class="input" type="text" placeholder="Email address">
+                        <button class="btn4"><img src="/images/right-arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="section5-wraper">
+                <p>copyright 2020 2021</p>
+                <p>Thanks for watching us</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

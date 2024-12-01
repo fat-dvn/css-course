@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #c7cbe4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 600px;
+            padding: 50px;
+        }
+        .content{
+            height: 470px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: #fff;
+            background-image: linear-gradient(90deg,#d57589,#ffc7a3);
+            box-shadow: -50px 40px 60px 23px #b09bd4;
+            padding: 2rem;
+        }
+        .top{
+            width: 550px;
+            position: relative;
+            bottom: -64px;
+            left: -10px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            padding-top: 18px;
+            color: #fff;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            font-size: 12px;
+        }
+        ul a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .last-li{
+            background-color:#ff676e;
+            border-radius: 20px;
+            padding:  10px 20px;
+            box-shadow: -2px 2px 3px rgba(0,0,0,0.2);
+        }
+        .items{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 50px;
+            transition: all 250ms ease-in;
+        }
+        .item-section{
+            width: 90px;
+            height: 110px;
+            border-radius: 20px 5px 15px 15px;
+            box-shadow: -5px 8px 10px rgba(0,0,0,0.2);
+            position: relative;
+            transition: all 250ms ease;
+        }
+        .items >div:nth-child(1){
+            background-image: linear-gradient(90deg,#ddcfd0,#f9e2d2);
+        }
+        .items >div:nth-child(2){
+            background-image: linear-gradient(90deg,#bf92f1,#e4b3fa);
+        }
+        .items >div:nth-child(3){
+            background-image: linear-gradient(90deg,#69e7b7 ,#9fffd6 );
+        }
+        
+        .items >div:nth-child(4){
+            background-image: linear-gradient(90deg,#febea7 ,#fdf5d2 );
+        }
+        .items >div:nth-child(5){
+            background-image: linear-gradient(90deg,#fd556b ,#ff8e80 );
+        }
+        .items >div:nth-child(6){
+            background-image: linear-gradient(90deg,#f89e27 ,#ffd054 );
+        }
+        .items >div:nth-child(7){
+            background-image: linear-gradient(90deg,#bf92f1 ,#e4b3fa );
+        }
+        .items >div:nth-child(8){
+            background-image: linear-gradient(90deg,#febea7 ,#fdf5d2 ); 
+        }
+        .item-section:hover{
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top"><img src="/images/header.png" alt=""></div>
+        <div class="content">
+            <nav class="nav">
+                <h3>treats and fun</h3>
+                <ul>
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li class="last-li"><a href="">yes</a></li>
+                </ul>
+            </nav>
+           <div class="items">
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/smoothie.png" alt=""> 
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/grapefruit.png" alt="">   
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/dessert.png" alt="">  
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/icecream.png" alt="">   
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/strawberry.png" alt="">   
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/unknown.png" alt="">  
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/unknown2.png" alt="">
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="item">
+                        <img src="/images/mysteryfruit.png" alt="">
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

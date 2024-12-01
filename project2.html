@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        .wraper{
+            width: 400px;
+            height: 600px;
+            position: relative;
+        }
+        .form{
+            width: 300px;
+            height: 400px;
+            background-color:  rgba(255,255, 255, 0.13);
+            border: 2px solid rgba(255,255, 255, 0.13);
+            padding: 50px 35px 35px 35px;
+            margin-top: 56px;
+            border-radius: 25px;
+            box-shadow: 0 0 40px rgba(0,0, 0, 0.25) ;
+            backdrop-filter: blur(10px);
+        }
+        .textlogin{
+            font-size: 32px;
+            text-align: center;
+            color: white;
+        }
+        .lable{
+            margin-bottom: 16px;
+            color: white;
+            margin-bottom: 8px;
+            display: block;
+
+        }
+        .input{
+            display: block;
+            height: 30px ;
+            border-radius: 4px;
+            width: 100%;
+            background-color: rgba(255,255, 255, 0.13);
+        }
+        .input, .btn{
+            outline: none;
+            border: none;
+        }
+        .box{
+            margin-bottom: 24px;
+        }
+        .btn{
+            border-radius: 4px;
+            margin-top: 18px;
+            width: 100%;
+            font-size: 18px;
+            text-align: center;
+        }
+        .shape1{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: absolute;
+            top: -50px;
+            left: -80px;
+            background-color:#7B1FA2;
+            z-index: -1;
+        }
+        .shape2{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -50px;
+            right: -60px;
+            background-color:#E64A19;
+            z-index: -1;
+
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <form class="form" action="">
+            <h4 class="textlogin">Login Here</h4>
+            <div class="box">
+               <label class="lable" for="user">username</label>
+               <input class="input" type="text" id="user" placeholder="username" autofocus required>
+            </div>
+            <div>
+               <label class="lable" for="password">password</label>
+               <input class="input" type="password" placeholder="password" required>
+            </div>
+            <button class="btn">Log In</button>
+
+            
+        </form>
+    </div>
+   
+</body>
+</html>
